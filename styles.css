@@ -57,3 +57,22 @@ body {
     font-size: 1.25em;
     font-weight: 700;
 }
+
+.form {
+    background-color: #ffffff;
+}
+
+.form>p {
+    font-size: 1.25em;
+}
+
+.form label {
+    font-size: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
