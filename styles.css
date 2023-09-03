@@ -83,7 +83,7 @@ p {
 }
 
 .form label {
-    font-size: 0.5em;
+    font-size: 0.75em;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     margin-bottom: 3px;
@@ -101,6 +101,7 @@ input {
     border: 1px solid #E5E7EB;
     font-size: 1em;
     width: 80%;
+    padding: 12px 15px;
 }
 
 form {
