@@ -104,6 +104,10 @@ input {
     padding: 12px 15px;
 }
 
+input:focus {
+    box-shadow: 2px 2px 2px 2px lightblue;
+}
+
 form {
     display: flex;
     flex-wrap: wrap;
