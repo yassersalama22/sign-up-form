@@ -50,10 +50,11 @@ body {
 
 .main {
     width: 100%;
-    max-height: 1vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    background-color: #F9FAFB;
 }
 
 p {
@@ -86,7 +87,7 @@ p {
     font-size: 0.75em;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 
 .form-row {
@@ -99,17 +100,60 @@ p {
 
 input {
     border: 1px solid #E5E7EB;
+    border-radius: 4px;
     font-size: 1em;
     width: 80%;
     padding: 12px 15px;
 }
 
+input::placeholder {
+    font-style: italic;
+    color: #E5E7EB;
+    font-size: smaller;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
+    box-shadow: none;
+}
+
 input:focus {
-    box-shadow: 2px 2px 2px 2px lightblue;
+    box-shadow: 0 0 5pt 2pt lightblue;
+    outline-width: 0px;
 }
 
 form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.bottom {
+    width: 100%;
+    background-color: #F9FAFB;
+    padding: 40px 75px;
+}
+
+.submit-button {
+    background-color: #596C48;
+    border: none;
+    color: white;
+    padding: 20px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 5pt 2pt rgb(209, 209, 209);
+}
+
+.login-question {
+    color: #3d3d3f;
+}
+
+.login-link {
+    color: #596C48;
+    text-decoration: none;
+    font-weight: 600;
 }
